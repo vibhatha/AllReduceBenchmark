@@ -69,6 +69,8 @@ void allReduce(int messageSize) {
     }
 
 
+    delete local_message;
+    delete global_message;
 
     mpi_finalize();
 }
